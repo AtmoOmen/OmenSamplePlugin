@@ -1,9 +1,14 @@
+using System;
+using System.Numerics;
+using Dalamud.Interface.Windowing;
+using ImGuiNET;
+
 namespace SamplePlugin.Windows;
 
 public class ConfigWindow : Window, IDisposable
 {
 
-    public ConfigWindow(Plugin plugin) : base(
+    public ConfigWindow() : base(
         "Unique Configuration Window Title",
         ImGuiWindowFlags.NoResize | ImGuiWindowFlags.NoCollapse | ImGuiWindowFlags.NoScrollbar |
         ImGuiWindowFlags.NoScrollWithMouse)
