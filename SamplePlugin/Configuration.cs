@@ -8,14 +8,13 @@ public class Configuration : IPluginConfiguration
 {
     public int Version { get; set; } = 0;
 
-
     public void Init()
     {
     }
 
     public void Save()
     {
-        Service.PluginInterface.SavePluginConfig(this);
+        DService.PI.SavePluginConfig(this);
     }
 
     public void Uninit()
