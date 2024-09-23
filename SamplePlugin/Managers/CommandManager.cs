@@ -90,6 +90,7 @@ public sealed class CommandManager
     {
         WindowManager.Main.IsOpen ^= true;
 
+        if (string.IsNullOrWhiteSpace(args)) return;
         var spitedArgs = args.Split(' ', 2);
         if (_subCommandArgs.TryGetValue(spitedArgs[0], out var commandInfo))
             commandInfo.Handler(spitedArgs[0], spitedArgs.Length > 1 ? spitedArgs[1] : string.Empty);
