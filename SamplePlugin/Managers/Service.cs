@@ -19,6 +19,7 @@ public class Service
     {
         CommandManager.Uninit();
         WindowManager.Uninit();
+        
         Config.Uninit();
 
         DService.Uninit();

@@ -6,9 +6,7 @@ Modified from goatcorp's one, by AtmoOmen. Mainly for my personal use.
 
 ## Information / 信息
 
-- **API**： 10
-
-- **Dalamud Packager**: 2.1.13
+- **API**： 11
 
 - Provides a more logical code arrangement and simpler service and configuration management.
 

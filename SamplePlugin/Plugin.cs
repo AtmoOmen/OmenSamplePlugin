@@ -25,8 +25,5 @@ public sealed class Plugin : IDalamudPlugin
         Service.Init(pluginInterface);
     }
 
-    public void Dispose()
-    {
-        Service.Uninit();
-    }
+    public void Dispose() => Service.Uninit();
 }
